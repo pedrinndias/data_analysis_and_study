@@ -7,418 +7,270 @@
 - [Estatísticas Gerais](#estatísticas-gerais)
 - [Dicionário de Dados](#dicionário-de-dados)
 
-## Estrutura Hierárquica
+# Estrutura Hierárquica
 
 ## Seção P0
 **Descrição:** Id
+
 ## Seção P1
-├── **a**: Idade
-│   └── **1**: Faixa Idade
-├── **b**: Genero
-├── **c**: Cor/Raca/Etnia
-├── **d**: Pcd
-├── **e**: Experiencia_Profissional_Prejudicada
-│   ├── **1**: Não Acredito Que Minha Experiência Profissional Seja Afetada
-│   ├── **2**: Experiencia Prejudicada Devido A Minha Cor Raça Etnia
-│   ├── **3**: Experiencia Prejudicada Devido A Minha Identidade De Gênero
-│   └── **4**: Experiencia Prejudicada Devido Ao Fato De Ser Pcd
-├── **f**: Aspectos_Prejudicados
-│   ├── **1**: Quantidade De Oportunidades De Emprego/Vagas Recebidas
-│   ├── **2**: Senioridade Das Vagas Recebidas Em Relação À Sua Experiência
-│   ├── **3**: Aprovação Em Processos Seletivos/Entrevistas
-│   ├── **4**: Oportunidades De Progressão De Carreira
-│   ├── **5**: Velocidade De Progressão De Carreira
-│   ├── **6**: Nível De Cobrança No Trabalho/Stress No Trabalho
-│   ├── **7**: Atenção Dada Diante Das Minhas Opiniões E Ideias
-│   ├── **8**: Relação Com Outros Membros Da Empresa
-│   └── **9**: Relação Com Outros Membros Da Empresa
-├── **g**: Vive_No_Brasil
-├── **i**: Estado Onde Mora
-│   ├── **1**: Uf Onde Mora
-│   └── **2**: Regiao Onde Mora
-├── **j**: Mudou De Estado?
-├── **k**: Regiao De Origem
-├── **l**: Nivel De Ensino
-└── **m**: Área De Formação
+- **a**: Idade  
+  └── **1**: Faixa Idade
+- **b**: Genero
+- **c**: Cor/Raca/Etnia
+- **d**: Pcd
+- **e**: Experiencia_Profissional_Prejudicada  
+  ├── **1**: Não Acredito Que Minha Experiência Profissional Seja Afetada  
+  ├── **2**: Experiencia Prejudicada Devido A Minha Cor Raça Etnia  
+  ├── **3**: Experiencia Prejudicada Devido A Minha Identidade De Gênero  
+  └── **4**: Experiencia Prejudicada Devido Ao Fato De Ser Pcd
+- **f**: Aspectos_Prejudicados  
+  ├── **1**: Quantidade De Oportunidades De Emprego/Vagas Recebidas  
+  ├── **2**: Senioridade Das Vagas Recebidas Em Relação À Sua Experiência  
+  ├── **3**: Aprovação Em Processos Seletivos/Entrevistas  
+  ├── **4**: Oportunidades De Progressão De Carreira  
+  ├── **5**: Velocidade De Progressão De Carreira  
+  ├── **6**: Nível De Cobrança No Trabalho/Stress No Trabalho  
+  ├── **7**: Atenção Dada Diante Das Minhas Opiniões E Ideias  
+  ├── **8**: Relação Com Outros Membros Da Empresa  
+  └── **9**: Relação Com Outros Membros Da Empresa
+- **g**: Vive_No_Brasil
+- **i**: Estado Onde Mora  
+  ├── **1**: Uf Onde Mora  
+  └── **2**: Regiao Onde Mora
+- **j**: Mudou De Estado?
+- **k**: Regiao De Origem
+- **l**: Nivel De Ensino
+- **m**: Área De Formação
+
 ## Seção P2
-├── **a**: Qual Sua Situação Atual De Trabalho?
-├── **b**: Setor
-├── **c**: Numero De Funcionarios
-├── **d**: Gestor?
-├── **e**: Cargo Como Gestor
-├── **f**: Cargo Atual
-├── **g**: Nivel
-├── **h**: Faixa Salarial
-├── **i**: Quanto Tempo De Experiência Na Área De Dados Você Tem?
-├── **j**: Quanto Tempo De Experiência Na Área De Ti/Engenharia De Software Você Teve Antes De Começar A Trabalhar Na Área De Dados?
-├── **k**: Você Está Satisfeito Na Sua Empresa Atual?
-├── **l**: Qual O Principal Motivo Da Sua Insatisfação Com A Empresa Atual?
-│   ├── **1**: Falta De Oportunidade De Crescimento No Emprego Atual
-│   ├── **2**: Salário Atual Não Corresponde Ao Mercado
-│   ├── **3**: Não Tenho Uma Boa Relação Com Meu Líder/Gestor
-│   ├── **4**: Gostaria De Trabalhar Em Em Outra Área De Atuação
-│   ├── **5**: Gostaria De Receber Mais Benefícios
-│   ├── **6**: O Clima De Trabalho/Ambiente Não É Bom
-│   └── **7**: Falta De Maturidade Analítica Na Empresa
-├── **m**: Você Participou De Entrevistas De Emprego Nos Últimos 6 Meses?
-├── **n**: Você Pretende Mudar De Emprego Nos Próximos 6 Meses?
-├── **o**: Quais Os Principais Critérios Que Você Leva Em Consideração No Momento De Decidir Onde Trabalhar?
-│   ├── **1**: Remuneração/Salário
-│   ├── **2**: Benefícios
-│   ├── **3**: Propósito Do Trabalho E Da Empresa
-│   ├── **4**: Flexibilidade De Trabalho Remoto
-│   ├── **5**: Ambiente E Clima De Trabalho
-│   ├── **6**: Oportunidade De Aprendizado E Trabalhar Com Referências Na Área
-│   ├── **7**: Plano De Carreira E Oportunidades De Crescimento Profissional
-│   ├── **8**: Maturidade Da Empresa Em Termos De Tecnologia E Dados
-│   ├── **9**: Qualidade Dos Gestores E Líderes
-│   └── **10**: Reputação Que A Empresa Tem No Mercado
-├── **q**: Empresa Que Trabaha Passou Por Layoff Em 2023
-├── **r**: Atualmente Qual A Sua Forma De Trabalho?
-├── **s**: Qual A Forma De Trabalho Ideal Para Você?
-└── **t**: Caso Sua Empresa Decida Pelo Modelo 100% Presencial Qual Será Sua Atitude?
+- **a**: Qual Sua Situação Atual De Trabalho?
+- **b**: Setor
+- **c**: Numero De Funcionarios
+- **d**: Gestor?
+- **e**: Cargo Como Gestor
+- **f**: Cargo Atual
+- **g**: Nivel
+- **h**: Faixa Salarial
+- **i**: Quanto Tempo De Experiência Na Área De Dados Você Tem?
+- **j**: Quanto Tempo De Experiência Na Área De Ti/Engenharia De Software Você Teve Antes De Começar A Trabalhar Na Área De Dados?
+- **k**: Você Está Satisfeito Na Sua Empresa Atual?
+- **l**: Qual O Principal Motivo Da Sua Insatisfação Com A Empresa Atual?  
+  ├── **1**: Falta De Oportunidade De Crescimento No Emprego Atual  
+  ├── **2**: Salário Atual Não Corresponde Ao Mercado  
+  ├── **3**: Não Tenho Uma Boa Relação Com Meu Líder/Gestor  
+  ├── **4**: Gostaria De Trabalhar Em Em Outra Área De Atuação  
+  ├── **5**: Gostaria De Receber Mais Benefícios  
+  ├── **6**: O Clima De Trabalho/Ambiente Não É Bom  
+  └── **7**: Falta De Maturidade Analítica Na Empresa
+- **m**: Você Participou De Entrevistas De Emprego Nos Últimos 6 Meses?
+- **n**: Você Pretende Mudar De Emprego Nos Próximos 6 Meses?
+- **o**: Quais Os Principais Critérios Que Você Leva Em Consideração No Momento De Decidir Onde Trabalhar?  
+  ├── **1**: Remuneração/Salário  
+  ├── **2**: Benefícios  
+  ├── **3**: Propósito Do Trabalho E Da Empresa  
+  ├── **4**: Flexibilidade De Trabalho Remoto  
+  ├── **5**: Ambiente E Clima De Trabalho  
+  ├── **6**: Oportunidade De Aprendizado E Trabalhar Com Referências Na Área  
+  ├── **7**: Plano De Carreira E Oportunidades De Crescimento Profissional  
+  ├── **8**: Maturidade Da Empresa Em Termos De Tecnologia E Dados  
+  ├── **9**: Qualidade Dos Gestores E Líderes  
+  └── **10**: Reputação Que A Empresa Tem No Mercado
+- **q**: Empresa Que Trabaha Passou Por Layoff Em 2023
+- **r**: Atualmente Qual A Sua Forma De Trabalho?
+- **s**: Qual A Forma De Trabalho Ideal Para Você?
+- **t**: Caso Sua Empresa Decida Pelo Modelo 100% Presencial Qual Será Sua Atitude?
+
 ## Seção P3
-├── **a**: Qual O Número Aproximado De Pessoas Que Atuam Com Dados Na Sua Empresa Hoje?
-├── **b**: Quais Desses Papéis/Cargos Fazem Parte Do Time Ou Chapter De Dados Da Sua Empresa?
-│   ├── **1**: Analytics Engineer
-│   ├── **2**: Engenharia De Dados/Data Engineer
-│   ├── **3**: Analista De Dados/Data Analyst
-│   ├── **4**: Cientista De Dados/Data Scientist
-│   ├── **5**: Database Administrator/Dba
-│   ├── **6**: Analista De Business Intelligence/Bi
-│   ├── **7**: Arquiteto De Dados/Data Architect
-│   ├── **8**: Data Product Manager/Dpm
-│   └── **9**: Business Analyst
-├── **c**: Quais Dessas Responsabilidades Fazem Parte Da Sua Rotina Atual De Trabalho Como Gestor?
-│   ├── **1**: Pensar Na Visão De Longo Prazo De Dados Da Empresa E Fortalecimento Da Cultura Analítica Da Companhia.
-│   ├── **2**: Organização De Treinamentos E Iniciativas Com O Objetivo De Aumentar A Maturidade Analítica Das Áreas De Negócios.
-│   ├── **3**: Atração
-│   ├── **4**: Decisão Sobre Contratação De Ferramentas E Tecnologias Relacionadas A Dados.
-│   ├── **5**: Sou Gestor Da Equipe Responsável Pela Engenharia De Dados E Por Manter O Data Lake Da Empresa Como Fonte Única Dos Dados
-│   ├── **6**: Sou Gestor Da Equipe Responsável Pela Entrega De Dados
-│   ├── **7**: Sou Gestor Da Equipe Responsável Por Iniciativas E Projetos Envolvendo Inteligência Artificial E Machine Learning.
-│   ├── **8**: Apesar De Ser Gestor Ainda Atuo Na Parte Técnica
-│   ├── **9**: Gestão De Projetos De Dados
-│   ├── **10**: Gestão De Produtos De Dados
-│   └── **11**: Gestão De Pessoas
-├── **d**: Quais São Os 3 Maiores Desafios Que Você Tem Como Gestor No Atual Momento?
-│   ├── **1**: A Contratar Novos Talentos.
-│   ├── **2**: B Reter Talentos.
-│   ├── **3**: C Convencer A Empresa A Aumentar Os Investimentos Na Área De Dados.
-│   ├── **4**: D Gestão De Equipes No Ambiente Remoto.
-│   ├── **5**: E Gestão De Projetos Envolvendo Áreas Multidisciplinares Da Empresa.
-│   ├── **6**: F Organizar As Informações E Garantir A Qualidade E Confiabilidade.
-│   ├── **7**: G Conseguir Processar E Armazenar Um Alto Volume De Dados.
-│   ├── **8**: H Conseguir Gerar Valor Para As Áreas De Negócios Através De Estudos E Experimentos.
-│   ├── **9**: I Desenvolver E Manter Modelos Machine Learning Em Produção.
-│   ├── **10**: J Gerenciar A Expectativa Das Áreas De Negócio Em Relação As Entregas Das Equipes De Dados.
-│   ├── **11**: K Garantir A Manutenção Dos Projetos E Modelos Em Produção
-│   ├── **12**: Conseguir Levar Inovação Para A Empresa Através Dos Dados.
-│   ├── **13**: Garantir Retorno Do Investimento Roi Em Projetos De Dados.
-│   └── **14**: Dividir O Tempo Entre Entregas Técnicas E Gestão.
-├── **e**: Ai Generativa É Uma Prioridade Em Sua Empresa?
-├── **f**: Tipos De Uso De Ai Generativa E Llms Na Empresa
-│   ├── **1**: Colaboradores Usando Ai Generativa De Forma Independente E Descentralizada
-│   ├── **2**: Direcionamento Centralizado Do Uso De Ai Generativa
-│   ├── **3**: Desenvolvedores Utilizando Copilots
-│   ├── **4**: Ai Generativa E Llms Para Melhorar Produtos Externos
-│   ├── **5**: Ai Generativa E Llms Para Melhorar Produtos Internos Para Os Colaboradores
-│   ├── **6**: Ia Generativa E Llms Como Principal Frente Do Negócio
-│   ├── **7**: Ia Generativa E Llms Não É Prioridade
-│   └── **8**: Não Sei Opinar Sobre O Uso De Ia Generativa E Llms Na Empresa
-└── **g**: Motivos Que Levam A Empresa A Não Usar Ai Genrativa E Llms
-│   ├── **1**: Falta De Compreensão Dos Casos De Uso
-│   ├── **2**: Falta De Confiabilidade Das Saídas Alucinação Dos Modelos
-│   ├── **3**: Incerteza Em Relação A Regulamentação
-│   ├── **4**: Preocupações Com Segurança E Privacidade De Dados
-│   ├── **5**: Retorno Sobre Investimento Roi Não Comprovado De Ia Generativa
-│   ├── **6**: Dados Da Empresa Não Estão Prontos Para Uso De Ia Generativa
-│   ├── **7**: Falta De Expertise Ou Falta De Recursos
-│   ├── **8**: Alta Direção Da Empresa Não Vê Valor Ou Não Vê Como Prioridade
-│   └── **9**: Preocupações Com Propriedade Intelectual
+- **a**: Qual O Número Aproximado De Pessoas Que Atuam Com Dados Na Sua Empresa Hoje?
+- **b**: Quais Desses Papéis/Cargos Fazem Parte Do Time Ou Chapter De Dados Da Sua Empresa?  
+  ├── **1**: Analytics Engineer  
+  ├── **2**: Engenharia De Dados/Data Engineer  
+  ├── **3**: Analista De Dados/Data Analyst  
+  ├── **4**: Cientista De Dados/Data Scientist  
+  ├── **5**: Database Administrator/Dba  
+  ├── **6**: Analista De Business Intelligence/Bi  
+  ├── **7**: Arquiteto De Dados/Data Architect  
+  ├── **8**: Data Product Manager/Dpm  
+  └── **9**: Business Analyst
+- **c**: Quais Dessas Responsabilidades Fazem Parte Da Sua Rotina Atual De Trabalho Como Gestor?  
+  ├── **1**: Pensar Na Visão De Longo Prazo De Dados Da Empresa E Fortalecimento Da Cultura Analítica Da Companhia.  
+  ├── **2**: Organização De Treinamentos E Iniciativas Com O Objetivo De Aumentar A Maturidade Analítica Das Áreas De Negócios.  
+  ├── **3**: Atração  
+  ├── **4**: Decisão Sobre Contratação De Ferramentas E Tecnologias Relacionadas A Dados.  
+  ├── **5**: Sou Gestor Da Equipe Responsável Pela Engenharia De Dados E Por Manter O Data Lake Da Empresa Como Fonte Única Dos Dados  
+  ├── **6**: Sou Gestor Da Equipe Responsável Pela Entrega De Dados  
+  ├── **7**: Sou Gestor Da Equipe Responsável Por Iniciativas E Projetos Envolvendo Inteligência Artificial E Machine Learning.  
+  ├── **8**: Apesar De Ser Gestor Ainda Atuo Na Parte Técnica  
+  ├── **9**: Gestão De Projetos De Dados  
+  ├── **10**: Gestão De Produtos De Dados  
+  └── **11**: Gestão De Pessoas
+- **d**: Quais São Os 3 Maiores Desafios Que Você Tem Como Gestor No Atual Momento?  
+  ├── **1**: A Contratar Novos Talentos.  
+  ├── **2**: B Reter Talentos.  
+  ├── **3**: C Convencer A Empresa A Aumentar Os Investimentos Na Área De Dados.  
+  ├── **4**: D Gestão De Equipes No Ambiente Remoto.  
+  ├── **5**: E Gestão De Projetos Envolvendo Áreas Multidisciplinares Da Empresa.  
+  ├── **6**: F Organizar As Informações E Garantir A Qualidade E Confiabilidade.  
+  ├── **7**: G Conseguir Processar E Armazenar Um Alto Volume De Dados.  
+  ├── **8**: H Conseguir Gerar Valor Para As Áreas De Negócios Através De Estudos E Experimentos.  
+  ├── **9**: I Desenvolver E Manter Modelos Machine Learning Em Produção.  
+  ├── **10**: J Gerenciar A Expectativa Das Áreas De Negócio Em Relação As Entregas Das Equipes De Dados.  
+  ├── **11**: K Garantir A Manutenção Dos Projetos E Modelos Em Produção  
+  ├── **12**: Conseguir Levar Inovação Para A Empresa Através Dos Dados.  
+  ├── **13**: Garantir Retorno Do Investimento Roi Em Projetos De Dados.  
+  └── **14**: Dividir O Tempo Entre Entregas Técnicas E Gestão.
+- **e**: Ai Generativa É Uma Prioridade Em Sua Empresa?
+- **f**: Tipos De Uso De Ai Generativa E Llms Na Empresa  
+  ├── **1**: Colaboradores Usando Ai Generativa De Forma Independente E Descentralizada  
+  ├── **2**: Direcionamento Centralizado Do Uso De Ai Generativa  
+  ├── **3**: Desenvolvedores Utilizando Copilots  
+  ├── **4**: Ai Generativa E Llms Para Melhorar Produtos Externos  
+  ├── **5**: Ai Generativa E Llms Para Melhorar Produtos Internos Para Os Colaboradores  
+  ├── **6**: Ia Generativa E Llms Como Principal Frente Do Negócio  
+  ├── **7**: Ia Generativa E Llms Não É Prioridade  
+  └── **8**: Não Sei Opinar Sobre O Uso De Ia Generativa E Llms Na Empresa
+- **g**: Motivos Que Levam A Empresa A Não Usar Ai Genrativa E Llms  
+  ├── **1**: Falta De Compreensão Dos Casos De Uso  
+  ├── **2**: Falta De Confiabilidade Das Saídas Alucinação Dos Modelos  
+  ├── **3**: Incerteza Em Relação A Regulamentação  
+  ├── **4**: Preocupações Com Segurança E Privacidade De Dados  
+  ├── **5**: Retorno Sobre Investimento Roi Não Comprovado De Ia Generativa  
+  ├── **6**: Dados Da Empresa Não Estão Prontos Para Uso De Ia Generativa  
+  ├── **7**: Falta De Expertise Ou Falta De Recursos  
+  ├── **8**: Alta Direção Da Empresa Não Vê Valor Ou Não Vê Como Prioridade  
+  └── **9**: Preocupações Com Propriedade Intelectual
+
 ## Seção P4
-├── **a**: Mesmo Que Esse Não Seja Seu Cargo Formal
-│   └── **1**: Atuacao
-├── **b**: Quais Das Fontes De Dados Listadas Você Já Analisou Ou Processou No Trabalho?
-│   ├── **1**: Dados Relacionais Estruturados Em Bancos Sql
-│   ├── **2**: Dados Armazenados Em Bancos Nosql
-│   ├── **3**: Imagens
-│   ├── **4**: Textos/Documentos
-│   ├── **5**: Vídeos
-│   ├── **6**: Áudios
-│   ├── **7**: Planilhas
-│   └── **8**: Dados Georeferenciados
-├── **c**: Entre As Fontes De Dados Listadas
-│   ├── **1**: Dados Relacionais Estruturados Em Bancos Sql
-│   ├── **2**: Dados Armazenados Em Bancos Nosql
-│   ├── **3**: Imagens
-│   ├── **4**: Textos/Documentos
-│   ├── **5**: Vídeos
-│   ├── **6**: Áudios
-│   ├── **7**: Planilhas
-│   └── **8**: Dados Georeferenciados
-├── **d**: Quais Das Linguagens Listadas Abaixo Você Utiliza No Trabalho?
-│   ├── **1**: Sql
-│   ├── **2**: R
-│   ├── **3**: Python
-│   ├── **4**: C/C++/C#
-│   ├── **5**: .Net
-│   ├── **6**: Java
-│   ├── **7**: Julia
-│   ├── **8**: Sas/Stata
-│   ├── **9**: Visual Basic/Vba
-│   ├── **10**: Scala
-│   ├── **11**: Matlab
-│   ├── **12**: Rust
-│   ├── **13**: Php
-│   ├── **14**: Javascript
-│   └── **15**: Não Utilizo Nenhuma Linguagem
-├── **e**: Entre As Linguagens Listadas Abaixo
-├── **f**: Entre As Linguagens Listadas Abaixo
-├── **g**: Quais Dos Bancos De Dados/Fontes De Dados Listados Abaixo Você Utiliza No Trabalho?
-│   ├── **1**: Mysql
-│   ├── **2**: Oracle
-│   ├── **3**: Sql Server
-│   ├── **4**: Amazon Aurora Ou Rds
-│   ├── **5**: Dynamodb
-│   ├── **6**: Coachdb
-│   ├── **7**: Cassandra
-│   ├── **8**: Mongodb
-│   ├── **9**: Mariadb
-│   ├── **10**: Datomic
-│   ├── **11**: S3
-│   ├── **12**: Postgresql
-│   ├── **13**: Elasticsearch
-│   ├── **14**: Db2
-│   ├── **15**: Microsoft Access
-│   ├── **16**: Sqlite
-│   ├── **17**: Sybase
-│   ├── **18**: Firebase
-│   ├── **19**: Vertica
-│   ├── **20**: Redis
-│   ├── **21**: Neo4J
-│   ├── **22**: Google Bigquery
-│   ├── **23**: Google Firestore
-│   ├── **24**: Amazon Redshift
-│   ├── **25**: Amazon Athena
-│   ├── **26**: Snowflake
-│   ├── **27**: Databricks
-│   ├── **28**: Hbase
-│   ├── **29**: Presto
-│   ├── **30**: Splunk
-│   ├── **31**: Sap Hana
-│   ├── **32**: Hive
-│   └── **33**: Firebird
-├── **h**: Dentre As Opções Listadas
-│   ├── **1**: Azure Microsoft
-│   ├── **2**: Amazon Web Services Aws
-│   ├── **3**: Google Cloud Gcp
-│   ├── **4**: Oracle Cloud
-│   ├── **5**: Ibm
-│   ├── **6**: Servidores On Premise/Não Utilizamos Cloud
-│   └── **7**: Cloud Própria
-├── **i**: Cloud Preferida
-├── **j**: Ferramenta De Bi Utilizada No Dia A Dia
-│   ├── **1**: Microsoft Powerbi
-│   ├── **2**: Qlik View/Qlik Sense
-│   ├── **3**: Tableau
-│   ├── **4**: Metabase
-│   ├── **5**: Superset
-│   ├── **6**: Redash
-│   ├── **7**: Looker
-│   ├── **8**: Looker Studiogoogle Data Studio
-│   ├── **9**: Amazon Quicksight
-│   ├── **10**: Mode
-│   ├── **11**: Alteryx
-│   ├── **12**: Microstrategy
-│   ├── **13**: Ibm Analytics/Cognos
-│   ├── **14**: Sap Business Objects/Sap Analytics
-│   ├── **15**: Oracle Business Intelligence
-│   ├── **16**: Salesforce/Einstein Analytics
-│   ├── **17**: Birst
-│   ├── **18**: Sas Visual Analytics
-│   ├── **19**: Grafana
-│   ├── **20**: Tibco Spotfire
-│   ├── **21**: Pentaho
-│   ├── **22**: Fazemos Todas As Análises Utilizando Apenas Excel Ou Planilhas Do Google
-│   └── **23**: Não Utilizo Nenhuma Ferramenta De Bi No Trabalho
-├── **k**: Qual Sua Ferramenta De Bi Preferida?
-├── **l**: Qual O Tipo De Uso De Ai Generativa E Llms Na Empresa
-│   ├── **1**: Colaboradores Usando Ai Generativa De Forma Independente E Descentralizada
-│   ├── **2**: Direcionamento Centralizado Do Uso De Ai Generativa
-│   ├── **3**: Desenvolvedores Utilizando Copilots
-│   ├── **4**: Ai Generativa E Llms Para Melhorar Produtos Externos Para Os Clientes Finais
-│   ├── **5**: Ai Generativa E Llms Para Melhorar Produtos Internos Para Os Colaboradores
-│   ├── **6**: Ia Generativa E Llms Como Principal Frente Do Negócio
-│   ├── **7**: Ia Generativa E Llms Não É Prioridade
-│   └── **8**: Não Sei Opinar Sobre O Uso De Ia Generativa E Llms Na Empresa
-└── **m**: Utiliza Chatgpt Ou Llms No Trabalho?
-│   ├── **1**: Não Uso Soluções De Ai Generativa Com Foco Em Produtividade
-│   ├── **2**: Uso Soluções Gratuitas De Ai Generativa Com Foco Em Produtividade
-│   ├── **3**: Uso E Pago Pelas Soluções De Ai Generativa Com Foco Em Produtividade
-│   ├── **4**: A Empresa Que Trabalho Paga Pelas Soluções De Ai Generativa Com Foco Em Produtividade
-│   └── **5**: Uso Soluções Do Tipo Copilot
+- **a**: Mesmo Que Esse Não Seja Seu Cargo Formal  
+  └── **1**: Atuacao
+- **b**: Quais Das Fontes De Dados Listadas Você Já Analisou Ou Processou No Trabalho?  
+  ├── **1**: Dados Relacionais Estruturados Em Bancos Sql  
+  ├── **2**: Dados Armazenados Em Bancos Nosql  
+  ├── **3**: Imagens  
+  ├── **4**: Textos/Documentos  
+  ├── **5**: Vídeos  
+  ├── **6**: Áudios  
+  ├── **7**: Planilhas  
+  └── **8**: Dados Georeferenciados
+- **c**: Entre As Fontes De Dados Listadas  
+  ├── **1**: Dados Relacionais Estruturados Em Bancos Sql  
+  ├── **2**: Dados Armazenados Em Bancos Nosql  
+  ├── **3**: Imagens  
+  ├── **4**: Textos/Documentos  
+  ├── **5**: Vídeos  
+  ├── **6**: Áudios  
+  ├── **7**: Planilhas  
+  └── **8**: Dados Georeferenciados
+- **d**: Quais Das Linguagens Listadas Abaixo Você Utiliza No Trabalho?  
+  ├── **1**: Sql  
+  ├── **2**: R  
+  ├── **3**: Python  
+  ├── **4**: C/C++/C#  
+  ├── **5**: .Net  
+  ├── **6**: Java  
+  ├── **7**: Julia  
+  ├── **8**: Sas/Stata  
+  ├── **9**: Visual Basic/Vba  
+  ├── **10**: Scala  
+  ├── **11**: Matlab  
+  ├── **12**: Rust  
+  ├── **13**: Php  
+  ├── **14**: Javascript  
+  └── **15**: Não Utilizo Nenhuma Linguagem
+- **e**: Entre As Linguagens Listadas Abaixo
+- **f**: Entre As Linguagens Listadas Abaixo
+- **g**: Quais Dos Bancos De Dados/Fontes De Dados Listados Abaixo Você Utiliza No Trabalho?  
+  ├── **1**: Mysql  
+  ├── **2**: Oracle  
+  ├── **3**: Sql Server  
+  ├── **4**: Amazon Aurora Ou Rds  
+  ├── **5**: Dynamodb  
+  ├── **6**: Coachdb  
+  ├── **7**: Cassandra  
+  ├── **8**: Mongodb  
+  ├── **9**: Mariadb  
+  ├── **10**: Datomic  
+  ├── **11**: S3  
+  ├── **12**: Postgresql  
+  ├── **13**: Elasticsearch  
+  ├── **14**: Db2  
+  ├── **15**: Microsoft Access  
+  ├── **16**: Sqlite  
+  ├── **17**: Sybase  
+  ├── **18**: Firebase  
+  ├── **19**: Vertica  
+  ├── **20**: Redis  
+  ├── **21**: Neo4J  
+  ├── **22**: Google Bigquery  
+  ├── **23**: Google Firestore  
+  ├── **24**: Amazon Redshift  
+  ├── **25**: Amazon Athena  
+  ├── **26**: Snowflake  
+  ├── **27**: Databricks  
+  ├── **28**: Hbase  
+  ├── **29**: Presto  
+  ├── **30**: Splunk  
+  ├── **31**: Sap Hana  
+  ├── **32**: Hive  
+  └── **33**: Firebird
+- **h**: Dentre As Opções Listadas  
+  ├── **1**: Azure Microsoft  
+  ├── **2**: Amazon Web Services Aws  
+  ├── **3**: Google Cloud Gcp  
+  ├── **4**: Oracle Cloud  
+  ├── **5**: Ibm  
+  ├── **6**: Servidores On Premise/Não Utilizamos Cloud  
+  └── **7**: Cloud Própria
+- **i**: Cloud Preferida
+- **j**: Ferramenta De Bi Utilizada No Dia A Dia  
+  ├── **1**: Microsoft Powerbi  
+  ├── **2**: Qlik View/Qlik Sense  
+  ├── **3**: Tableau  
+  ├── **4**: Metabase  
+  ├── **5**: Superset  
+  ├── **6**: Redash  
+  ├── **7**: Looker  
+  ├── **8**: Looker Studiogoogle Data Studio  
+  ├── **9**: Amazon Quicksight  
+  ├── **10**: Mode  
+  ├── **11**: Alteryx  
+  ├── **12**: Microstrategy  
+  ├── **13**: Ibm Analytics/Cognos  
+  ├── **14**: Sap Business Objects/Sap Analytics  
+  ├── **15**: Oracle Business Intelligence  
+  ├── **16**: Salesforce/Einstein Analytics  
+  ├── **17**: Birst  
+  ├── **18**: Sas Visual Analytics  
+  ├── **19**: Grafana  
+  ├── **20**: Tibco Spotfire  
+  ├── **21**: Pentaho  
+  ├── **22**: Fazemos Todas As Análises Utilizando Apenas Excel Ou Planilhas Do Google  
+  └── **23**: Não Utilizo Nenhuma Ferramenta De Bi No Trabalho
+- **k**: Qual Sua Ferramenta De Bi Preferida?
+- **l**: Qual O Tipo De Uso De Ai Generativa E Llms Na Empresa  
+  ├── **1**: Colaboradores Usando Ai Generativa De Forma Independente E Descentralizada  
+  ├── **2**: Direcionamento Centralizado Do Uso De Ai Generativa  
+  ├── **3**: Desenvolvedores Utilizando Copilots  
+  ├── **4**: Ai Generativa E Llms Para Melhorar Produtos Externos Para Os Clientes Finais  
+  ├── **5**: Ai Generativa E Llms Para Melhorar Produtos Internos Para Os Colaboradores  
+  ├── **6**: Ia Generativa E Llms Como Principal Frente Do Negócio  
+  ├── **7**: Ia Generativa E Llms Não É Prioridade  
+  └── **8**: Não Sei Opinar Sobre O Uso De Ia Generativa E Llms Na Empresa
+- **m**: Utiliza Chatgpt Ou Llms No Trabalho?  
+  ├── **1**: Não Uso Soluções De Ai Generativa Com Foco Em Produtividade  
+  ├── **2**: Uso Soluções Gratuitas De Ai Generativa Com Foco Em Produtividade  
+  ├── **3**: Uso E Pago Pelas Soluções De Ai Generativa Com Foco Em Produtividade  
+  ├── **4**: A Empresa Que Trabalho Paga Pelas Soluções De Ai Generativa Com Foco Em Produtividade  
+  └── **5**: Uso Soluções Do Tipo Copilot
+
 ## Seção P5
-├── **a**: Qual Seu Objetivo Na Área De Dados?
-├── **b**: Qual Oportunidade Você Está Buscando?
-├── **c**: Há Quanto Tempo Você Busca Uma Oportunidade Na Área De Dados?
-└── **d**: Como Tem Sido A Busca Por Um Emprego Na Área De Dados?
+- **a**: Qual Seu Objetivo Na Área De Dados?
+- **b**: Qual Oportunidade Você Está Buscando?
+- **c**: Há Quanto Tempo Você Busca Uma Oportunidade Na Área De Dados?
+- **d**: Como Tem Sido A Busca Por Um Emprego Na Área De Dados?
+
 ## Seção P6
-├── **a**: Quais Das Opções Abaixo Fazem Parte Da Sua Rotina No Trabalho Atual Como Engenheiro De Dados?
-│   ├── **1**: Desenvolvo Pipelines De Dados Utilizando Linguagens De Programação Como Python
-│   ├── **2**: Realizo Construções De Etls Em Ferramentas Como Pentaho
-│   ├── **3**: Crio Consultas Através Da Linguagem Sql Para Exportar Informações E Compartilhar Com As Áreas De Negócio.
-│   ├── **4**: Atuo Na Integração De Diferentes Fontes De Dados Através De Plataformas Proprietárias Como Stitch Data
-│   ├── **5**: Modelo Soluções De Arquitetura De Dados
-│   ├── **6**: Desenvolvo/Cuido Da Manutenção De Repositórios De Dados Baseados Em Streaming De Eventos Como Data Lakes E Data Lakehouses.
-│   ├── **7**: Atuo Na Modelagem Dos Dados
-│   ├── **8**: Cuido Da Qualidade Dos Dados
-│   └── **9**: Nenhuma Das Opções Listadas Refletem Meu Dia A Dia.
-├── **b**: Quais As Ferramentas/Tecnologias De Etl Que Você Utiliza No Trabalho Como Data Engineer?
-│   ├── **1**: Scripts Python
-│   ├── **2**: Sql & Stored Procedures
-│   ├── **3**: Apache Airflow
-│   ├── **4**: Apache Nifi
-│   ├── **5**: Luigi
-│   ├── **6**: Aws Glue
-│   ├── **7**: Talend
-│   ├── **8**: Pentaho
-│   ├── **9**: Alteryx
-│   ├── **10**: Stitch
-│   ├── **11**: Fivetran
-│   ├── **12**: Google Dataflow
-│   ├── **13**: Oracle Data Integrator
-│   ├── **14**: Ibm Datastage
-│   ├── **15**: Sap Bw Etl
-│   ├── **16**: Sql Server Integration Services Ssis
-│   ├── **17**: Sas Data Integration
-│   ├── **18**: Qlik Sense
-│   ├── **19**: Knime
-│   ├── **20**: Databricks
-│   └── **21**: Não Utilizo Ferramentas De Etl
-├── **c**: Sua Organização Possui Um Data Lake?
-├── **d**: Qual Tecnologia Utilizada Como Plataforma Do Data Lake?
-├── **e**: Sua Organização Possui Um Data Warehouse?
-├── **f**: Qual Tecnologia Utilizada Como Plataforma Do Data Warehouse?
-├── **g**: Quais As Ferramentas De Gestão De Qualidade De Dados
-└── **h**: Em Qual Das Opções Abaixo Você Gasta A Maior Parte Do Seu Tempo?
-│   ├── **1**: Desenvolvendo Pipelines De Dados Utilizando Linguagens De Programação Como Python
-│   ├── **2**: Realizando Construções De Etls Em Ferramentas Como Pentaho
-│   ├── **3**: Criando Consultas Através Da Linguagem Sql Para Exportar Informações E Compartilhar Com As Áreas De Negócio.
-│   ├── **4**: Atuando Na Integração De Diferentes Fontes De Dados Através De Plataformas Proprietárias Como Stitch Data
-│   ├── **5**: Modelando Soluções De Arquitetura De Dados
-│   ├── **6**: Desenvolvendo/Cuidando Da Manutenção De Repositórios De Dados Baseados Em Streaming De Eventos Como Data Lakes E Data Lakehouses.
-│   ├── **7**: Atuando Na Modelagem Dos Dados
-│   ├── **8**: Cuidando Da Qualidade Dos Dados
-│   └── **9**: Nenhuma Das Opções Listadas Refletem Meu Dia A Dia.
-## Seção P7
-├── **1**: Quais Das Opções Abaixo Fazem Parte Da Sua Rotina No Trabalho Atual Com Análise De Dados?
-├── **a**: 
-│   ├── **1**: Processo E Analiso Dados Utilizando Linguagens De Programação Como Python
-│   ├── **2**: Realizo Construções De Dashboards Em Ferramentas De Bi Como Powerbi
-│   ├── **3**: Crio Consultas Através Da Linguagem Sql Para Exportar Informações E Compartilhar Com As Áreas De Negócio.
-│   ├── **4**: Utilizo Apis Para Extrair Dados E Complementar Minhas Análises.
-│   ├── **5**: Realizo Experimentos E Estudos Utilizando Metodologias Estatísticas Como Teste De Hipótese
-│   ├── **6**: Desenvolvo/Cuido Da Manutenção De Etls Utilizando Tecnologias Como Talend
-│   ├── **7**: Atuo Na Modelagem Dos Dados
-│   ├── **8**: Desenvolvo/Cuido Da Manutenção De Planilhas Para Atender As Áreas De Negócio.
-│   ├── **9**: Utilizo Ferramentas Avançadas De Estatística Como Sass
-│   └── **10**: Nenhuma Das Opções Listadas Refletem Meu Dia A Dia.
-├── **b**: Quais As Ferramentas/Tecnologias De Etl Que Você Utiliza No Trabalho Como Data Analyst?
-│   ├── **1**: Scripts Python
-│   ├── **2**: Sql & Stored Procedures
-│   ├── **3**: Apache Airflow
-│   ├── **4**: Apache Nifi
-│   ├── **5**: Luigi
-│   ├── **6**: Aws Glue
-│   ├── **7**: Talend
-│   ├── **8**: Pentaho
-│   ├── **9**: Alteryx
-│   ├── **10**: Stitch
-│   ├── **11**: Fivetran
-│   ├── **12**: Google Dataflow
-│   ├── **13**: Oracle Data Integrator
-│   ├── **14**: Ibm Datastage
-│   ├── **15**: Sap Bw Etl
-│   ├── **16**: Sql Server Integration Services Ssis
-│   ├── **17**: Sas Data Integration
-│   ├── **18**: Qlik Sense
-│   ├── **19**: Knime
-│   ├── **20**: Databricks
-│   └── **21**: Não Utilizo Ferramentas De Etl
-├── **c**: Sua Empresa Utiliza Alguma Das Ferramentas Listadas Para Dar Mais Autonomia Em Análise De Dados Para As Áreas De Negócio?
-│   ├── **1**: Ferramentas De Automl Como H2O.Ai
-│   ├── **2**: ""Point And Click"" Analytics Como Alteryx
-│   ├── **3**: Product Metricts & Insights Como Mixpanel
-│   ├── **4**: Ferramentas De Análise Dentro De Ferramentas De Crm Como Salesforce Einstein Anaytics Ou Zendesk Dashboards.
-│   ├── **5**: Minha Empresa Não Utiliza Essas Ferramentas.
-│   └── **6**: Não Sei Informar.
-└── **d**: Em Qual Das Opções Abaixo Você Gasta A Maior Parte Do Seu Tempo De Trabalho?
-│   ├── **1**: Processando E Analisando Dados Utilizando Linguagens De Programação Como Python
-│   ├── **2**: Realizando Construções De Dashboards Em Ferramentas De Bi Como Powerbi
-│   ├── **3**: Criando Consultas Através Da Linguagem Sql Para Exportar Informações E Compartilhar Com As Áreas De Negócio.
-│   ├── **4**: Utilizando Apis Para Extrair Dados E Complementar Minhas Análises.
-│   ├── **5**: Realizando Experimentos E Estudos Utilizando Metodologias Estatísticas Como Teste De Hipótese
-│   ├── **6**: Desenvolvendo/Cuidando Da Manutenção De Etls Utilizando Tecnologias Como Talend
-│   ├── **7**: Atuando Na Modelagem Dos Dados
-│   ├── **8**: Desenvolvendo/Cuidando Da Manutenção De Planilhas Do Excel Ou Google Sheets Para Atender As Áreas De Negócio.
-│   ├── **9**: Utilizando Ferramentas Avançadas De Estatística Como Sas
-│   └── **10**: Nenhuma Das Opções Listadas Refletem Meu Dia A Dia.
-## Seção P8
-├── **a**: Quais Das Opções Abaixo Fazem Parte Da Sua Rotina No Trabalho Atual Com Ciência De Dados?
-│   ├── **1**: Estudos Ad-Hoc Com O Objetivo De Confirmar Hipóteses
-│   ├── **2**: Sou Responsável Pela Coleta E Limpeza Dos Dados Que Uso Para Análise E Modelagem.
-│   ├── **3**: Sou Responsável Por Entrar Em Contato Com Os Times De Negócio Para Definição Do Problema
-│   ├── **4**: Desenvolvo Modelos De Machine Learning Com O Objetivo De Colocar Em Produção Em Sistemas Produtos De Dados.
-│   ├── **5**: Sou Responsável Por Colocar Modelos Em Produção
-│   ├── **6**: Cuido Da Manutenção De Modelos De Machine Learning Já Em Produção
-│   ├── **7**: Realizo Construções De Dashboards Em Ferramentas De Bi Como Powerbi
-│   ├── **8**: Utilizo Ferramentas Avançadas De Estatística Como Sas
-│   ├── **9**: Crio E Dou Manutenção Em Etls
-│   ├── **10**: Crio E Gerencio Soluções De Feature Store E Cultura De Mlops.
-│   ├── **11**: Sou Responsável Por Criar E Manter A Infra Que Meus Modelos E Soluções Rodam Clusters
-│   └── **12**: Treino E Aplico Llms Para Solucionar Problemas De Negócio.
-├── **b**: Quais As Técnicas E Métodos Listados Abaixo Você Costuma Utilizar No Trabalho?
-│   ├── **1**: Utilizo Modelos De Regressão Linear
-│   ├── **2**: Utilizo Redes Neurais Ou Modelos Baseados Em Árvore Para Criar Modelos De Classificação
-│   ├── **3**: Desenvolvo Sistemas De Recomendação Recsys
-│   ├── **4**: Utilizo Métodos Estatísticos Bayesianos Para Analisar Dados
-│   ├── **5**: Utilizo Técnicas De Nlp Natural Language Processing Para Análisar Dados Não-Estruturados
-│   ├── **6**: Utilizo Métodos Estatísticos Clássicos Testes De Hipótese
-│   ├── **7**: Utilizo Cadeias De Markov Ou Hmms Para Realizar Análises De Dados
-│   ├── **8**: Desenvolvo Técnicas De Clusterização K-Means
-│   ├── **9**: Realizo Previsões Através De Modelos De Séries Temporais Time Series
-│   ├── **10**: Utilizo Modelos De Reinforcement Learning Aprendizado Por Reforço
-│   ├── **11**: Utilizo Modelos De Machine Learning Para Detecção De Fraude
-│   ├── **12**: Utilizo Métodos De Visão Computacional
-│   ├── **13**: Utilizo Modelos De Detecção De Churn
-│   └── **14**: Utilizo Llms Para Solucionar Problemas De Negócio
-├── **3**: Quais Dessas Tecnologias Fazem Parte Do Seu Dia A Dia Como Cientista De Dados?
-├── **c**: 
-│   ├── **1**: Ferramentas De Bi Powerbi
-│   ├── **2**: Planilhas Excel
-│   ├── **3**: Ambientes De Desenvolvimento Local R-Studio
-│   ├── **4**: Ambientes De Desenvolvimento Na Nuvem Google Colab
-│   ├── **5**: Ferramentas De Automl Datarobot
-│   ├── **6**: Ferramentas De Etl Apache Airflow
-│   ├── **7**: Plataformas De Machine Learning Tensorflow
-│   ├── **8**: Feature Store Feast
-│   ├── **9**: Sistemas De Controle De Versão Github
-│   ├── **10**: Plataformas De Data Apps Streamlit
-│   └── **11**: Ferramentas De Estatística Avançada Como Spss
-└── **d**: Em Qual Das Opções Abaixo Você Gasta A Maior Parte Do Seu Tempo No Trabalho?
-│   ├── **1**: Estudos Ad-Hoc Com O Objetivo De Confirmar Hipóteses
-│   ├── **2**: Coletando E Limpando Os Dados Que Uso Para Análise E Modelagem.
-│   ├── **3**: Entrando Em Contato Com Os Times De Negócio Para Definição Do Problema
-│   ├── **4**: Desenvolvendo Modelos De Machine Learning Com O Objetivo De Colocar Em Produção Em Sistemas Produtos De Dados.
-│   ├── **5**: Colocando Modelos Em Produção
-│   ├── **6**: Cuidando Da Manutenção De Modelos De Machine Learning Já Em Produção
-│   ├── **7**: Realizando Construções De Dashboards Em Ferramentas De Bi Como Powerbi
-│   ├── **8**: Utilizando Ferramentas Avançadas De Estatística Como Sas
-│   ├── **9**: Criando E Dando Manutenção Em Etls
-│   ├── **10**: Criando E Gerenciando Soluções De Feature Store E Cultura De Mlops.
-│   ├── **11**: Criando E Mantendo A Infra Que Meus Modelos E Soluções Rodam Clusters
-│   └── **12**: Treinando E Aplicando Llms Para Solucionar Problemas De Negócio.
+- **a**: Quais Das Opções Abaixo Fazem
 
 ## Análise por Coluna
 
