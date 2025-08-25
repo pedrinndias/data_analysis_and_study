@@ -1,8 +1,3 @@
-# Modelo de Dados da Farmácia
-
-Este é o Diagrama de Entidade-Relacionamento para o sistema da farmácia.
-
-```mermaid
 erDiagram
     %% Entidades Principais
     Farmacia {
@@ -73,11 +68,9 @@ erDiagram
     Nota_Fiscal ||--|{ Item_Nota : "contém"
     Produto ||--|{ Item_Nota : "é_item_de"
 
-    %% Relacionamentos de Herança (ISA)
-    %% Funcionário -> Total e Disjunta
-    Funcionario ||--|> Farmaceutico
-    Funcionario ||--|> Atendente
-    Funcionario ||--|> Gerente
+    %% Relacionamentos de Herança (ISA) - SINTAXE CORRIGIDA PARA GITHUB
+    Funcionario ||--|| Farmaceutico : "é_um"
+    Funcionario ||--|| Atendente : "é_um"
+    Funcionario ||--|| Gerente : "é_um"
+    Produto ||--|| Remedio : "é_um"
 
-    %% Produto -> Parcial
-    Produto ||--|> Remedio
