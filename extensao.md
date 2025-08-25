@@ -1,34 +1,34 @@
+# Modelo de Dados da Farmacia
+
+```mermaid
 erDiagram
-    %% Entidades Principais
     Farmacia {
-        string CNPJ PK "Chave Primária"
+        string CNPJ PK
         string Nome
         string Endereco
     }
 
     Cliente {
-        string CPF PK "Chave Primária"
+        string CPF PK
         string Nome
         date Data_Nascimento
-        int Idade "Derivado"
-        string Telefones "Multivalorado"
-        string Endereco "Composto"
+        int Idade
+        string Telefones
+        string Endereco
     }
 
     Nota_Fiscal {
-        int Numero_NF PK "Chave Primária"
+        int Numero_NF PK
         date Data_Emissao
         float Valor_Total
     }
 
-    %% Entidade Associativa para N:M
     Item_Nota {
         int Quantidade_Comprada
     }
 
-    %% Entidades com Herança (Generalização/Especialização)
     Funcionario {
-        int Matricula PK "Chave Primária"
+        int Matricula PK
         string Nome
         string Cargo
         float Salario
@@ -47,7 +47,7 @@ erDiagram
     }
 
     Produto {
-        int Codigo PK "Chave Primária"
+        int Codigo PK
         string Descricao
         float Preco_Unitario
         int Qtde_em_Estoque
@@ -58,19 +58,14 @@ erDiagram
         bool Obrigat_Receita
     }
 
-
-    %% Relacionamentos
     Farmacia ||--|{ Funcionario : "possui"
     Farmacia ||--|{ Nota_Fiscal : "emite"
     Cliente ||--|{ Nota_Fiscal : "realiza_compra"
 
-    %% Relacionamento N:M via Entidade Associativa
-    Nota_Fiscal ||--|{ Item_Nota : "contém"
-    Produto ||--|{ Item_Nota : "é_item_de"
+    Nota_Fiscal ||--|{ Item_Nota : "contem"
+    Produto ||--|{ Item_Nota : "e_item_de"
 
-    %% Relacionamentos de Herança (ISA) - SINTAXE CORRIGIDA PARA GITHUB
-    Funcionario ||--|| Farmaceutico : "é_um"
-    Funcionario ||--|| Atendente : "é_um"
-    Funcionario ||--|| Gerente : "é_um"
-    Produto ||--|| Remedio : "é_um"
-
+    Funcionario ||--|| Farmaceutico : "e_um"
+    Funcionario ||--|| Atendente : "e_um"
+    Funcionario ||--|| Gerente : "e_um"
+    Produto ||--|| Remedio : "e_um"
